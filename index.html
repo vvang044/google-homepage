@@ -12,7 +12,7 @@
  
   ul{
     list-style:none;
-    margin: 0;
+    margin:0;
     padding:0;
     overflow: hidden;
   }
@@ -31,14 +31,22 @@
     text-align:right;
   }
 
-  
   #logo{
-    width:10px;
-    height:35px;
-    background:orange;
-    border-radius:85px;
-    color: white; 
+width: 2px;
+height: 30px;
+background: orange;
+border-radius: 85px;
+color: white;
+position: absolute;
+top: 32px;
+  } 
+
+  .innertext{
+    position: relative;
+    right:5px;
+    bottom: -5px;
   }
+  
   .name a{
     font-family:helvetica;
     font-size: 100px;
@@ -95,28 +103,28 @@ footer {
 
 <html>
 <head>
-  <title>Google Homepage</title>
-  <header>
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="container">
-        <ul>
+	<title>Google Homepage</title>
+	<header>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<ul>
           <li><a href="https://www.google.com/intl/en/about/?fg=1&utm_source=google.com&utm_medium=referral&utm_campaign=hp-header">About</a></li>
           <li><a href="https://store.google.com/?utm_source=hp_header&utm_medium=google_oo&utm_campaign=GS100042">Store</a></li>
-          <li style="float:right"><a href="#" id="logo">V</a></li>
+          <li style="float:right"><a href="#" id="logo"><span class="innertext">V</span></a></li>
           <li style="float:right"><a href="https://www.google.com/gmail/about/#">Gmail</a></li>
           <li style="float:right"><a href="https://www.google.com/imghp?hl=en&tab=wi&authuser=0">Images</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+				</ul>
+			</div>
+		</nav>
+	</header>
 </head>
 <body>
-  <div class="name">
+	<div class="name">
 <a href="#">
   G<span class="o">o</span><span class="second">o</span>g<span class="l">l</span><span class="e">e</span>
 </a>
 </div>
-  <div class="input">
+	<div class="input">
     <form>
 <input type="text" name="search" align="middle">
     </form>
